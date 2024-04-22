@@ -1,4 +1,4 @@
-# 西安热力升级openssh记录
+# openssh升级记录
 ## 基本情况：客户漏洞扫描发现数据库服务器和web服务器存在openssh相关漏洞，经排查现有ssh版本为5.X，操作系统为centos6.X，最新ssh版本为9.X(备份之前的ssh：mv /etc/ssh{,.bak})
 ## 1.替换软件源，将软件源替换为aliyun源
 ```bash
