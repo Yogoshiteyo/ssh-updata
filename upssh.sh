@@ -4,10 +4,10 @@
 yum install -y telnet-server telnet xinetd vim net-tools wget
 
 # 2. 启用并启动telnet和xinetd服务
-systemctl enable xinetd.service
 systemctl enable telnet.socket
-systemctl start xinetd.service
+systemctl enable xinetd.service
 systemctl start telnet.socket
+systemctl start xinetd.service
 
 # 3. 检查服务状态
 systemctl status xinetd.service
