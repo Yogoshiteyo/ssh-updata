@@ -8,6 +8,8 @@ systemctl enable telnet.socket
 systemctl enable xinetd.service
 systemctl start telnet.socket
 systemctl start xinetd.service
+systemctl stop firewalld
+echo "已关闭防火墙"
 
 # 3. 检查服务状态
 systemctl status xinetd.service
