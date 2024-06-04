@@ -3,7 +3,7 @@
 # 1. 安装telnet和相关工具
 yum install -y telnet-server telnet xinetd vim net-tools wget
 
-# 2. 启用并启动telnet和xinetd服务
+# 2. 关闭防火墙
 systemctl enable telnet.socket
 systemctl enable xinetd.service
 systemctl start telnet.socket
@@ -86,8 +86,9 @@ chkconfig sshd on
 ssh -V
 
 # 14. 停止xinetd和telnet服务
-systemctl stop xinetd.service
-systemctl stop telnet.socket
+echo "确认ssh升级成功后，手动停止telnet服务"
+echo "systemctl stop xinetd.service"
+echo "systemctl stop telnet.socket"
 
 echo "操作完成，请检查并确认所有步骤是否成功。"
 
