@@ -1,6 +1,6 @@
 # openssh升级记录
 ## 基本情况：客户漏洞扫描发现数据库服务器和web服务器存在openssh相关漏洞，经排查现有ssh版本为5.X，操作系统为centos6.X，最新ssh版本为9.X(备份之前的ssh：mv /etc/ssh{,.bak})
-## 一键升级脚本
+## 一键升级脚本（centos7.9）
 ```bash
 curl -O https://raw.githubusercontent.com/Yogoshiteyo/ssh-updata/main/upssh.sh && chmod +x upssh.sh && ./upssh.sh
 ```
