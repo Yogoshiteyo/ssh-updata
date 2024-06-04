@@ -41,6 +41,9 @@ EOL
 # 提示用户退出ssh，使用telnet登录到服务器
 echo "退出ssh，使用telnet登录到服务器"
 
+systemctl start telnet.socket
+
+
 # 6. 下载并解压OpenSSH源码包
 mkdir -p /root/soft
 cd /root/soft
