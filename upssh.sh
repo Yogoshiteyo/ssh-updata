@@ -89,6 +89,3 @@ ssh -V
 echo "确认ssh升级成功后，手动停止telnet服务"
 echo "systemctl stop xinetd.service"
 echo "systemctl stop telnet.socket"
-
-echo "操作完成，请检查并确认所有步骤是否成功。"
-
